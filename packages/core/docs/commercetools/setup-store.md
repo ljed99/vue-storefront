@@ -38,3 +38,21 @@ There is plenty of other configuration options and you can check them [here](./c
 ## Configuring other integrations
 
 Depending on the configuration and if you're using Enterprise version you could have additional integrations to set up. You will find their configurations in `middleware.config.js`
+
+
+# How to setup commercetools store with Vue Storefront?
+
+## Commercetools settings
+
+### The currencies, countries, and languages
+
+### Tax categories 
+
+### Shipping methods 
+
+### Products categories 
+
+### Product catalog 
+
+## Vuestorefront settings
+
