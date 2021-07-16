@@ -62,19 +62,21 @@ After that you can set specific method for each zone and currency:
   <img src="../images/setup-store/shipping-methods.png" alt="Commercetools shipping methods configuration" />
 </center>
 
-As we are focused on setting up basic working store other settings can be omitted. But if you want to know more about Channels, Stores, searching features and more please see the [documentation](https://docs.commercetools.com/merchant-center/project-settings#channels).
+As we are focused on setting up basic working store other settings can be omitted. But if you want to know more about Channels, Stores, searching features, and more see the [documentation](https://docs.commercetools.com/merchant-center/project-settings#channels).
 
 ### Products categories
 
-After setting up basic configuration you need to provide categories. They are main structures to organize the products in groups and make them easy to search for the customer. Please see [this guide](https://docs.commercetools.com/tutorials/product-modeling/categories#top) to know more about categorizing items in your store.
+After setting up basic configuration you need to provide categories. They are main structures to organize the products in groups and make them easy to search for the customer. See [this guide](https://docs.commercetools.com/tutorials/product-modeling/categories#top) to know more about categorizing items in your store.
 In order to create category you need to take few steps:
 
-- first choose name, and category order to decide what will be shown first.
+- first choose name, and category order to decide what will be shown first
   <center>
-    <img src="../images/setup-store/create-category-1.png" alt="Commercetools create category first step" />
+    <img src="../images/setup-store/create-category-0.png" alt="Commercetools create category first step" />
   </center>
-- choose the parent category to which it belongs
-  []
+- select the parent category to which it belongs
+  <center>
+    <img src="../images/setup-store/create-category-1.png" alt="Commercetools create category second step" />
+  </center>
 - write down the slug (short url for the category)
   <center>
     <img src="../images/setup-store/create-category-2.png" alt="Commercetools create category third step" />
@@ -86,7 +88,7 @@ Please provide category structure with at least two levels, in order to show cat
 
 Finally you need to add products and assign them to proper category.
 To create any product in commercetools, at least one product type need to be set. It is the sort of template with certain attributes which is used as a base for the product.
-Creating product type:
+Creating a product type involves:
 
 - provide name and description
 
@@ -94,14 +96,14 @@ Creating product type:
     <img src="../images/setup-store/product-type-1.png" alt="Commercetools create product type first step" />
   </center>
 
-- click 'add attribute' and choose name, label, constraints, and type
+- click 'add attribute' and fill name, label, constraints, and type
   <center>
     <img src="../images/setup-store/product-type-2.png" alt="Commercetools create product type first step" />
   </center>
 
 This will let you add product with certain characteristic like so:
 
-- click add product and chose the type
+- click add product and select the type
   <center>
     <img src="../images/setup-store/add-product-1.png" alt="Commercetools add product first step" />
   </center>
@@ -123,11 +125,18 @@ Adding few products with at least two level deep categories hierarchy will be en
 ### API settings
 
 The Last important step is to generate credentials for your project to connect both tools.
-Go to the developer settings and click 'Create new API client' button and choose manage -> Project scope, but please have in mind that it use all API for the project, so it is not recommended for production use. In that case choose only scopes that are needed.
-[]
+Go to the developer settings and click 'Create new API client' button and choose manage -> Project scope, but please keep in mind that it use entire API for the project, so it is not recommended for production use. In that case, select only scopes that are needed.
+
+<center>
+  <img src="../images/setup-store/api-client-1.png" alt="Commercetools set scope for client API" />
+</center>
+
 If you need more information about scopes please see [documentation](https://docs.commercetools.com/api/scopes).
-After clicking create API you will see all credentials. There are shown only once so you need to keep them safely. You can download them in the format you need.
-[]
+When you click on create API you will see all the credentials. They are only displayed once, so you need to store them sacurely. You can download them in the format you need.
+
+<center>
+  <img src="../images/setup-store/api-client-2.png" alt="Commercetools client API credentials" />
+</center>
 
 Now let's move to front-end side.
 
